@@ -1,4 +1,4 @@
-# DPL-JSON
+# SKILL-JSON
 
 The Cadence Skill functions in the repository are used
 to convert Disembodied Property Lists (DPLs) to 
