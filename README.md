@@ -2,7 +2,9 @@
 
 The Cadence Skill functions in the repository are used
 to convert Disembodied Property Lists (DPLs) to 
-JavaScript Object Notation (JSON) and backwards.
+JavaScript Object Notation (JSON) strings and backwards.
+Utilize the function *EDdpl2json* to convert a DPL in a JSON string
+and *EDjson2dpl* to convert a JSON string in a DPL.
 
 The below shown table shows the corresponding data structures
 in Skill and JSON.
@@ -22,8 +24,17 @@ Skill tables, arrays etc. are *NOT* considered (a warning message is given).
 | `null`            | Symbol `unbound`                |
 
 
-Utilize the function *EDdpl2json* to convert a DPL in a JSON string
-and *EDjson2dpl* to convert a JSON string in a DPL.
+## Setup
+
+Load the file *EDdpl2json.il* with
+```scheme
+load("EDdpl2json.il")
+```
+to convert a DPL to JSON and *EDjson2dpl.il* with
+```scheme
+load("EDjson2dpl.il")
+```
+to convert JSON in a DPL.
 
 ## Example
 
