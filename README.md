@@ -24,6 +24,13 @@ Skill tables, arrays etc. are *NOT* considered (a warning message is given).
 | `null`            | Symbol `unbound`                |
 
 
+JSON arrays are converted to Skill lists, because the elements
+of a JSON array can be arbitrary type, but in the Skill domain
+the array elements must be of the same type.
+An empty JSON array is not considered by *EDjson2dpl*, because 
+an empty Skill list is equal to *nil*, which represents
+*false* in SKill.
+
 ## Setup
 
 Load the file *EDdpl2json.il* with
