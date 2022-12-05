@@ -8,10 +8,10 @@ and *EDjson2dpl* to convert a JSON string in a DPL.
 
 The below shown table shows the corresponding data structures
 in Skill and JSON.
-Skill tables, arrays etc. are *NOT* considered (a warning message is given).
+Skill tables, arrays, database-objects etc. are *NOT* considered 
+(a warning message is given).
 
-
-| JSON              | SKILL                           |
+| JSON              | Skill                           |
 | ----------------- | ------------------------------- |
 | Object            | Disembodied Property List (DPL) |
 | Array (non-empty) | List                            |
@@ -29,7 +29,7 @@ of a JSON array can be arbitrary type, but in the Skill domain
 the array elements must be of the same type.
 An empty JSON array is not considered by *EDjson2dpl*, because 
 an empty Skill list is equal to *nil*, which represents
-*false* in SKill.
+*false* in Skill.
 
 ## Setup
 
