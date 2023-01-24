@@ -90,16 +90,32 @@
     ((fixp val)    (fprintf port "%L" val)     )
     ((floatp val)  (fprintf port "%L" val)     )
     ((stringp val) (fprintf port "\"%s\"" val) )  
-    ((dplp val)
+
+    ((and
+      (dplp val)
+      (oddp (length val))
+      (let ((even t))
+        (apply
+          (quote and)
+          (foreach mapcar elem (cdr val)
+            (if even then
+              (setq even nil)
+              (symbolp elem)  
+            else
+              (setq even t)
+            );if
+          );foreach
+        );apply
+      );let
+     );and
 
         (fprintf port "{")
 
         (let ((first t))
 
-
           (foreach elem val->?
             (if first then
-              (setq first nil)  
+              (setq first nil) 
             else
               (fprintf port ", ")
             );if
@@ -128,10 +144,12 @@
               (fprintf port ", ")
             );if
 
-            (_EDdpl2jsonHier elem port)
+            (if (boundp (quote elem))
+              (_EDdpl2jsonHier elem port)
+              (fprintf port "null")
+            );if
           );foreach
         );let
-
 
         (fprintf port "]")
       );if
