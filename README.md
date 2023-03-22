@@ -31,7 +31,7 @@ An empty JSON array is not considered by *EDjson2dpl*, because
 an empty Skill list is equal to *nil*, which represents
 *false* in Skill.
 
-I spend little effort on the performance on the converting functions,
+I spend little effort on the performance of the converting functions,
 because the JSON files that are considered in the on-top application
 are small.
 
