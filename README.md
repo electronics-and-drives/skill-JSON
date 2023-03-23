@@ -1,4 +1,5 @@
 # SKILL-JSON
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 The Cadence Skill functions in the repository are used
 to convert Disembodied Property Lists (DPLs) to 
@@ -70,7 +71,7 @@ lastName "Doe" firstName "John"
 
 ## License
 
-Copyright (c) 2022, [Reutlingen University](https://www.reutlingen-university.de), [Electronics & Drives](https://www.electronics-and-drives.de/)
+Copyright (c) 2023, [Reutlingen University](https://www.reutlingen-university.de), [Electronics & Drives](https://www.electronics-and-drives.de/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
