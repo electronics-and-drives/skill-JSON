@@ -23,7 +23,7 @@
 *
 *   Revision:   2022-11-22 Created
 *
-*   Copyright 2022, Reutlingen University, Electronics & Drives 
+*   Copyright 2023, Reutlingen University, Electronics & Drives 
 *
 *   Permission is hereby granted, free of charge, to any person obtaining a 
 *   copy of this software and associated documentation files (the "Software"), 

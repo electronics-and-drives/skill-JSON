@@ -64,9 +64,32 @@ lastName "Doe" firstName "John"
 )
 ```
 
+## Pretty Print
+
+The above shown JSON string can be pretty-printed in Virtuoso with
+the below shown commands
+
+```scheme
+(setq str (lsprintf "%L" (lsprintf "%L" json)))
+
+(setq
+  cid
+  (ipcBeginProcess
+    (lsprintf
+      "python -c 'import sys,json;data=json.loads(%s);print(json.dumps(data,indent=2))'"
+      (substring str 2 (difference (strlen str) 2))
+    );lsprintf
+  );ipcBeginProcess
+);setq
+
+(ipcWait cid)
+
+pretty_json=(ipcReadProcess cid)
+```
+
 ## License
 
-Copyright (c) 2022, [Reutlingen University](https://www.reutlingen-university.de), [Electronics & Drives](https://www.electronics-and-drives.de/)
+Copyright (c) 2023, [Reutlingen University](https://www.reutlingen-university.de), [Electronics & Drives](https://www.electronics-and-drives.de/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
