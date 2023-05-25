@@ -89,7 +89,7 @@ the below shown commands
 
 (ipcWait cid)
 
-pretty_json=(ipcReadProcess cid)
+(setq pretty_json (ipcReadProcess cid))
 ```
 
 ## License
