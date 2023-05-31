@@ -33,7 +33,7 @@ an empty Skill list is equal to *nil*, which represents
 *false* in Skill.
 
 I spend little effort on the performance of the converting functions,
-because the JSON files that are considered in the on-top application
+because the JSON files that are considered in my on-top application
 are small.
 
 ## Setup
